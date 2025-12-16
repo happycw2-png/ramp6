@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all; 
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Malgun Gothic', sans-serif; 
+}
+
+a {
+    color: white;
+    text-underline-offset: 3px;
+    
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(0.9); 
+}
+
+.source-text {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+}
+
+.source-style {
+    text-decoration-thickness: 0.2px;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    width: 90%; 
+    max-width: 800px; 
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+.main-sentence {
+    font-size: 26px; 
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 40px; 
+}
+
+.sub-sentence {
+    font-size: 20px; 
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.home-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 60px; 
+    height: auto;
+    z-index: 10;
+}
+
+.home-icon img {
+    width: 100%;
+    filter: invert(1); 
+    drop-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 700px) {
+    .source-text {
+        font-size: 14px;
+    }
+
+    .main-sentence {
+        font-size: 20px; 
+        margin-bottom: 30px;
+    }
+
+    .sub-sentence {
+        font-size: 16px;
+    }
+
+    .home-icon {
+        width: 40px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
